@@ -21,6 +21,10 @@ docker build -t aman07a/hello-world-python:0.0.2.RELEASE .
 ```bash
 docker run -p 5000:5000 aman07a/hello-world-python:0.0.2.RELEASE
 ```
+## Run (detached):
+```bash
+docker run -p 5000:5000 -d aman07a/hello-world-python:0.0.2.RELEASE
+```
 ## List of containers:
 ```bash
 docker container ls
