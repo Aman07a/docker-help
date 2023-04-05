@@ -1,4 +1,4 @@
-# docker-help
+# Docker Settings
 
 To make your Docker image publicly accessible or grant access to specific users, you can use the Docker Hub repository settings.
 
@@ -24,6 +24,10 @@ docker run -p 5000:5000 aman07a/hello-world-python:0.0.2.RELEASE
 ## Run (detached):
 ```bash
 docker run -p 5000:5000 -d aman07a/hello-world-python:0.0.2.RELEASE
+```
+## Push (Publishing to the Docker Hub):
+```bash
+docker push aman07a/hello-world-python:0.0.2.RELEASE
 ```
 ## List of containers:
 ```bash
