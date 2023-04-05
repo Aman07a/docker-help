@@ -13,8 +13,23 @@ If you granted access to specific users, they will need to log in to Docker Hub 
 
 Note that you can also control access to your Docker images using organization memberships or teams on Docker Hub. This can be useful for managing access to images within a larger group or organization.
 
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-## Docker image pushing to the Docker Hub
+## Build:
+```bash
+docker build -t aman07a/hello-world-python:0.0.2.RELEASE .
+```
+## Run:
+```bash
+docker run -p 5000:5000 aman07a/hello-world-python:0.0.2.RELEASE
+```
+## List of containers:
+```bash
+docker container ls
+```
+## List of images:
+```bash
+docker images
+```
+## Docker image pushing to the Docker Hub:
 To push the Docker image to a container registry like Docker Hub under the username `aman07a`, follow these steps:
 
 Log in to Docker Hub from the command line using the docker login command:
