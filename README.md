@@ -46,6 +46,9 @@ docker run -p 5000:5000 -d aman07a/hello-world-nodejs:0.0.2.RELEASE
 ```bash
 docker run -p 5000:5000 -d aman07a/hello-world-java:0.0.2.RELEASE
 ```
+```bash
+docker run -p 8000:8000 --name=currency-exchange aman07a/currency-exchange:0.0.1-RELEASE
+```
 ## Push (Publishing to the Docker Hub):
 ```bash
 docker push aman07a/hello-world-python:0.0.2.RELEASE
