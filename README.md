@@ -24,8 +24,12 @@ docker build -t aman07a/hello-world-nodejs:0.0.2.RELEASE .
 docker build -t aman07a/hello-world-java:0.0.2.RELEASE .
 ```
 ```bash
+docker build -t aman07a/currency-exchange:0.0.1-RELEASE .
+```
+```bash
 docker build -t aman07a/currency-conversion:0.0.1-RELEASE .
 ```
+
 ## Run:
 ```bash
 docker run -p 5000:5000 aman07a/hello-world-python:0.0.2.RELEASE
@@ -36,6 +40,13 @@ docker run -p 5000:5000 aman07a/hello-world-nodejs:0.0.2.RELEASE
 ```bash
 docker run -p 5000:5000 aman07a/hello-world-java:0.0.2.RELEASE
 ```
+```bash
+docker run -p 8000:8000 --name=currency-exchange aman07a/currency-exchange:0.0.1-RELEASE
+```
+```bash
+docker run -p 8100:8100 --name=currency-conversion aman07a/currency-conversion:0.0.1-RELEASE
+```
+
 ## Run (detached):
 ```bash
 docker run -p 5000:5000 -d aman07a/hello-world-python:0.0.2.RELEASE
@@ -47,8 +58,12 @@ docker run -p 5000:5000 -d aman07a/hello-world-nodejs:0.0.2.RELEASE
 docker run -p 5000:5000 -d aman07a/hello-world-java:0.0.2.RELEASE
 ```
 ```bash
-docker run -p 8000:8000 --name=currency-exchange aman07a/currency-exchange:0.0.1-RELEASE
+docker run -p 8000:8000 -d --name=currency-exchange aman07a/currency-exchange:0.0.1-RELEASE
 ```
+```bash
+docker run -p 8100:8100 -d --name=currency-conversion aman07a/currency-conversion:0.0.1-RELEASE
+```
+
 ## Push (Publishing to the Docker Hub):
 ```bash
 docker push aman07a/hello-world-python:0.0.2.RELEASE
@@ -59,6 +74,7 @@ docker push aman07a/hello-world-nodejs:0.0.2.RELEASE
 ```bash
 docker push aman07a/hello-world-java:0.0.2.RELEASE
 ```
+
 ## List of containers:
 ```bash
 docker container ls
@@ -67,6 +83,7 @@ docker container ls
 ```bash
 docker images
 ```
+
 ## Docker image pushing to Docker Hub:
 To push the Docker image to a container registry like Docker Hub under the username `aman07a`, follow these steps:
 
