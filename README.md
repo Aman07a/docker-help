@@ -17,17 +17,29 @@ Note that you can also control access to your Docker images using organization m
 ```bash
 docker build -t aman07a/hello-world-python:0.0.2.RELEASE .
 ```
+```bash
+docker build -t aman07a/hello-world-nodejs:0.0.2.RELEASE .
+```
 ## Run:
 ```bash
 docker run -p 5000:5000 aman07a/hello-world-python:0.0.2.RELEASE
+```
+```bash
+docker run -p 5000:5000 aman07a/hello-world-nodejs:0.0.2.RELEASE
 ```
 ## Run (detached):
 ```bash
 docker run -p 5000:5000 -d aman07a/hello-world-python:0.0.2.RELEASE
 ```
+```bash
+docker run -p 5000:5000 -d aman07a/hello-world-nodejs:0.0.2.RELEASE
+```
 ## Push (Publishing to the Docker Hub):
 ```bash
 docker push aman07a/hello-world-python:0.0.2.RELEASE
+```
+```bash
+docker push aman07a/hello-world-nodejs:0.0.2.RELEASE
 ```
 ## List of containers:
 ```bash
@@ -37,7 +49,7 @@ docker container ls
 ```bash
 docker images
 ```
-## Docker image pushing to the Docker Hub:
+## Docker image pushing to Docker Hub:
 To push the Docker image to a container registry like Docker Hub under the username `aman07a`, follow these steps:
 
 Log in to Docker Hub from the command line using the docker login command:
