@@ -23,6 +23,9 @@ docker build -t aman07a/hello-world-nodejs:0.0.2.RELEASE .
 ```bash
 docker build -t aman07a/hello-world-java:0.0.2.RELEASE .
 ```
+```bash
+docker build -t aman07a/currency-conversion:0.0.1-RELEASE .
+```
 ## Run:
 ```bash
 docker run -p 5000:5000 aman07a/hello-world-python:0.0.2.RELEASE
