@@ -186,6 +186,10 @@ docker-compose config
 ```bash
 docker-compose ps
 ```
+| CONTAINER                           | REPOSITORY                  | TAG           |
+| ----------------------------------- | --------------------------- | ------------- |
+| microservices-currency-conversion-1 | in28min/currency-conversion | 0.0.1-RELEASE |
+| microservices-currency-exchange-1   | in28min/currency-exchange   | 0.0.1-RELEASE |
 
 ### Lists of running containers for the services defined in the `docker-compose.yml`
 ```bash
@@ -197,7 +201,7 @@ docker-compose top
 docker-compose pause
 ```
 
-### Other Docker Compose actions:
+### Other Docker Compose Actions:
 ```bash
 docker-compose pause
 ```
