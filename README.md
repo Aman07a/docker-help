@@ -162,44 +162,52 @@ docker-compose --version
 docker-compose up
 ```
 
-### Stop and Remove Microservices
+### Stop and Remove Microservices:
 ```bash
 docker compose down
 ```
 
-### Start Docker Compose services in detached mode
+### Start Docker Compose services in detached mode:
 ```bash
 docker compose up -d
 ```
 
-### Display real-time events from the containers 
+### Display real-time events from the containers:
 ```bash
 docker-compose events
 ```
 
-### Used to validate and view the Docker Compose file (`docker-compose.yml`)
+### Used to validate and view the Docker Compose file (`docker-compose.yml`):
 ```bash
 docker-compose config
 ```
 
-### Lists of images used by the services defined in the `docker-compose.yml`
+### Lists of images used by the services defined in the `docker-compose.yml` :
 ```bash
-docker-compose ps
+docker-compose images
 ```
 | CONTAINER                           | REPOSITORY                  | TAG           |
 | ----------------------------------- | --------------------------- | ------------- |
 | microservices-currency-conversion-1 | in28min/currency-conversion | 0.0.1-RELEASE |
 | microservices-currency-exchange-1   | in28min/currency-exchange   | 0.0.1-RELEASE |
 
-### Lists of running containers for the services defined in the `docker-compose.yml`
+### Lists of running containers for the services defined in the `docker-compose.yml` :
+```bash
+docker-compose ps
+```
+| NAME                                | IMAGE                                     | SERVICE             | PORTS                  |
+| ----------------------------------- | ----------------------------------------- | ------------------- | ---------------------- |
+| microservices-currency-conversion-1 | in28min/currency-conversion:0.0.1-RELEASE | currency-conversion | 0.0.0.0:8100->8100/tcp |
+| microservices-currency-exchange-1   | in28min/currency-exchange:0.0.1-RELEASE   | currency-exchange   | 0.0.0.0:8000->8000/tcp |
+
+### Display the running processes inside the containers managed by Docker Compose:
 ```bash
 docker-compose top
 ```
-
-### Display the running processes inside the containers managed by Docker Compose
-```bash
-docker-compose pause
-```
+| PROCESSORS                          |
+| ----------------------------------- |
+| microservices-currency-conversion-1 |
+| microservices-currency-exchange-1   |
 
 ### Other Docker Compose Actions:
 ```bash
