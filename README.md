@@ -83,17 +83,18 @@ http://localhost:8000/currency-exchange/from/EUR/to/INR
 http://localhost:8100/currency-conversion/from/EUR/to/INR/quantity/10
 ```
 
-## List of containers:
+## Containers
+### List of containers:
 ```bash
 docker container ls
 ```
 
-## Stop active container:
+### Stop active container:
 ```bash
 docker container stop currency-conversion
 ```
 
-## Remove container:
+### Remove container:
 ```bash
 docker container rm currency-conversion
 ```
@@ -112,7 +113,8 @@ docker network create currency-network
 docker run -p 8100:8100 -d --env CURRENCY_EXCHANGE_SERVICE_HOST=http://currency-exchange --name=currency-conversion --link currency-exchange in28min/currency-conversion:0.0.1-RELEASE
 ```
 
-## List of images:
+## Images
+### List of images:
 ```bash
 docker images
 ```
