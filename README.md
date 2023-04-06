@@ -1,4 +1,7 @@
-# Docker Settings
+# Docker
+![1_3ds-PdxGGMN-ZzJH95_lsA](https://user-images.githubusercontent.com/60389872/230331660-2a9abf80-40bb-4b8f-bda6-8fdd41214241.png)
+
+## Docker Hub
 
 To make your Docker image publicly accessible or grant access to specific users, you can use the Docker Hub repository settings.
 
