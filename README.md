@@ -112,14 +112,14 @@ docker run -p 8000:8000 -d --name=currency-exchange --network=currency-network i
 ```url
 docker run -p 8100:8100 -d --env CURRENCY_EXCHANGE_SERVICE_HOST=http://currency-exchange --name=currency-conversion --network=currency-network in28min/currency-conversion:0.0.1-RELEASE
 ```
-## Docker Compose
+## Docker Compose:
 Using Docker Compose to simplify microservices launch
 
-### Docker Compose version
+### Docker Compose version:
 ```bash
 docker-compose --version
 ```
-### Using `docker-compose.yml` to launch microservices
+### Using `docker-compose.yml` to launch microservices:
 ```bash
 docker-compose up
 ```
