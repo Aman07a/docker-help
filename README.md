@@ -197,7 +197,7 @@ docker-compose top
 docker-compose pause
 ```
 
-### Other Docker Compose Actions:
+### Other Docker Compose actions:
 ```bash
 docker-compose pause
 ```
