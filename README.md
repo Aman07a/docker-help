@@ -72,6 +72,14 @@ http://localhost:8000/currency-exchange/from/EUR/to/INR
 http://localhost:8100/currency-conversion/from/EUR/to/INR/quantity/10
 ```
 
+## Linking containers:
+- You don't want to HARDCODE
+- Configure an Environment Variable - `CURRENCY_EXCHANGE_SERVICE_HOST`
+- --env CURRENCY_EXCHANGE_SERVICE_HOST=http://currency-exchange
+```url
+docker run -p 8100:8100 -d --env CURRENCY_EXCHANGE_SERVICE_HOST=http://currency-exchange --name=currency-conversion --link currency-exchange in28min/currency-conversion:0.0.1-RELEASE
+```
+
 ## Push (Publishing to the Docker Hub):
 ```bash
 docker push aman07a/hello-world-python:0.0.2.RELEASE
