@@ -64,6 +64,14 @@ docker run -p 8000:8000 -d --name=currency-exchange aman07a/currency-exchange:0.
 docker run -p 8100:8100 -d --name=currency-conversion aman07a/currency-conversion:0.0.1-RELEASE
 ```
 
+## Response (currency):
+```url
+http://localhost:8000/currency-exchange/from/EUR/to/INR
+```
+```url
+http://localhost:8100/currency-conversion/from/EUR/to/INR/quantity/10
+```
+
 ## Push (Publishing to the Docker Hub):
 ```bash
 docker push aman07a/hello-world-python:0.0.2.RELEASE
