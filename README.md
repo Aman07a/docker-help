@@ -105,6 +105,14 @@ docker container rm currency-conversion
 docker network create currency-network
 ```
 
+### Linking network:
+```url
+docker run -p 8000:8000 -d --name=currency-exchange --network=currency-network in28min/currency-exchange:0.0.1-RELEASE
+```
+```url
+docker run -p 8100:8100 -d --env CURRENCY_EXCHANGE_SERVICE_HOST=http://currency-exchange --name=currency-conversion --network=currency-network in28min/currency-conversion:0.0.1-RELEASE
+```
+
 ## Linking containers:
 - You don't want to HARDCODE
 - Configure an Environment Variable - `CURRENCY_EXCHANGE_SERVICE_HOST`
