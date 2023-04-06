@@ -77,13 +77,36 @@ docker push aman07a/hello-world-nodejs:0.0.2.RELEASE
 ```bash
 docker push aman07a/hello-world-java:0.0.2.RELEASE
 ```
-
-## Response (currency):
+## Currency:
 ```url
 http://localhost:8000/currency-exchange/from/EUR/to/INR
 ```
+
+```json
+{
+  "id": 10001,
+  "from": "USD",
+  "to": "INR",
+  "conversionMultiple": 65.00,
+  "exchangeEnvironmentInfo": "4b7e104c165d v1 c165d"
+}
+```
+
 ```url
 http://localhost:8100/currency-conversion/from/EUR/to/INR/quantity/10
+```
+
+```json
+{
+  "id": 10002,
+  "from": "EUR",
+  "to": "INR",
+  "conversionMultiple": 75.00,
+  "quantity": 10,
+  "totalCalculatedAmount": 750.00,
+  "exchangeEnvironmentInfo": "4b7e104c165d v1 c165d",
+  "conversionEnvironmentInfo": "fb9e1a117c80 v1 17c80"
+}
 ```
 
 ## Containers
