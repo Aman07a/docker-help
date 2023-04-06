@@ -100,12 +100,12 @@ docker container rm currency-conversion
 ```
 
 ## Networking:
-### Create new network:
+### Create custom network:
 ```bash
 docker network create currency-network
 ```
 
-### Linking network:
+### Using custom networking to connect microservices:
 ```url
 docker run -p 8000:8000 -d --name=currency-exchange --network=currency-network in28min/currency-exchange:0.0.1-RELEASE
 ```
