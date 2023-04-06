@@ -162,6 +162,65 @@ docker-compose --version
 docker-compose up
 ```
 
+### Stop and Remove Microservices
+```bash
+docker compose down
+```
+
+### Start Docker Compose services in detached mode
+```bash
+docker compose up -d
+```
+
+### Display real-time events from the containers 
+```bash
+docker-compose events
+```
+
+### Used to validate and view the Docker Compose file (`docker-compose.yml`)
+```bash
+docker-compose config
+```
+
+### Lists of images used by the services defined in the `docker-compose.yml`
+```bash
+docker-compose ps
+```
+
+### Lists of running containers for the services defined in the `docker-compose.yml`
+```bash
+docker-compose top
+```
+
+### Display the running processes inside the containers managed by Docker Compose
+```bash
+docker-compose pause
+```
+
+### Other Docker Compose Actions:
+```bash
+docker-compose pause
+```
+```bash
+docker-compose unpause
+```
+```bash
+docker-compose stop
+```
+```bash
+docker-compose kill
+```
+
+## Remove everything from the Docker host system (`WARNING`):
+  - all stopped containers
+  - all networks not used by at least one container
+  - all images without at least one container associated to them
+  - all build cache
+
+```bash 
+docker system prune -a
+```
+
 ## Linking containers:
 - You don't want to HARDCODE
 - Configure an Environment Variable - `CURRENCY_EXCHANGE_SERVICE_HOST`
