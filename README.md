@@ -118,7 +118,7 @@ docker run -p 8100:8100 -d --env CURRENCY_EXCHANGE_SERVICE_HOST=http://currency-
 docker logs currency-conversion
 ```
 ```bash
-docker logs -f 123456789
+docker logs -f CONTAINER_ID
 ```
 
 ## Images:
