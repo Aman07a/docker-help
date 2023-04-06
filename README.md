@@ -113,7 +113,7 @@ docker network create currency-network
 docker run -p 8100:8100 -d --env CURRENCY_EXCHANGE_SERVICE_HOST=http://currency-exchange --name=currency-conversion --link currency-exchange in28min/currency-conversion:0.0.1-RELEASE
 ```
 
-## Images
+## Images:
 ### List of images:
 ```bash
 docker images
