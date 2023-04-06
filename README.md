@@ -79,6 +79,12 @@ docker push aman07a/hello-world-java:0.0.2.RELEASE
 ```bash
 docker container ls
 ```
+
+## Remove container:
+```bash
+docker container rm currency-exchange
+```
+
 ## List of images:
 ```bash
 docker images
