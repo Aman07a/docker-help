@@ -119,7 +119,8 @@ docker run -p 8100:8100 -d --env CURRENCY_EXCHANGE_SERVICE_HOST=http://currency-
 docker images
 ```
 
-## Docker image pushing to Docker Hub:
+## Authentication:
+### Docker image pushing to Docker Hub:
 To push the Docker image to a container registry like Docker Hub under the username `aman07a`, follow these steps:
 
 Log in to Docker Hub from the command line using the docker login command:
