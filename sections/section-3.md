@@ -53,3 +53,9 @@ kubectl delete pod hello-world-rest-api-58ff5dd898-6219d
 ```
 
 `pod "hello-world-rest-api-58ff5dd898-6219d" deleted`
+
+### Set up automatic horizontal scaling for a Kubernetes deployment <br/> based on a specific metric:
+
+```bash
+kubectl autoscale deployment hello-world-rest-api --max=10 --cpu-percent=8
+```
