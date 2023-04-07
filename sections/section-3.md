@@ -19,3 +19,28 @@ docker run -p 8080:8080 in28min/hello-world-rest-api:0.0.1.RELEASE
 ```url
 http://localhost:8080/hello-world
 ```
+
+## Kubernetes
+```bash
+kubectl create deployment hello-world-rest-api --image=in28min/hello-world-rest-api:0.0.1.RELEASE
+```
+
+deployment.apps/hello-world-rest-api created
+
+```bash
+kubectl expose deployment hello-world-rest-api --type=LoadBalancer --port=8080
+```
+
+service/hello-world-rest-api exposed
+
+```bash
+kubectl scale deployment hello-world-rest-api --replicas=3
+```
+
+deployment.extensions/hello-world-rest-api scaled
+
+```bash
+kubectl delete pod hello-world-rest-api-58ff5dd898-6219d
+```
+
+pod "hello-world-rest-api-58ff5dd898-6219d" deleted
