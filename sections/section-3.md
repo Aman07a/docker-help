@@ -61,3 +61,19 @@ kubectl autoscale deployment hello-world-rest-api --max=10 --cpu-percent=70
 ```
 
 `horizontalpodautoscaler.autoscaling/hello-world-rest-api autoscaled`
+
+### Edit the configuration of a Kubernetes deployment:
+
+```bash
+kubectl edit deployment hello-world-rest-api
+```
+
+`deployment.extensions/hello-world-rest-api edited`
+
+### Update the container image used by a Kubernetes deployment:
+
+```bash
+kubectl set image deployment hello-world-rest-api hello-world-rest-api=in28min/hello-world-rest-api:0.0.2.RELEASE
+```
+
+`deployment.extensions/hello-world-rest-api image updated`
