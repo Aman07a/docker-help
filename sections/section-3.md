@@ -28,7 +28,7 @@ kubectl create deployment hello-world-rest-api --image=in28min/hello-world-rest-
 
 `deployment.apps/hello-world-rest-api created`
 
-### Create a Kubernetes service that exposes a deployment
+### Create a Kubernetes service that exposes a deployment:
 
 ```bash
 kubectl expose deployment hello-world-rest-api --type=LoadBalancer --port=8080
@@ -36,7 +36,7 @@ kubectl expose deployment hello-world-rest-api --type=LoadBalancer --port=8080
 
 `service/hello-world-rest-api exposed`
 
-###
+### Scale a Kubernetes deployment up or down, by adjusting the number of replicas of the deployment:
 
 ```bash
 kubectl scale deployment hello-world-rest-api --replicas=3
@@ -44,7 +44,7 @@ kubectl scale deployment hello-world-rest-api --replicas=3
 
 `deployment.extensions/hello-world-rest-api scaled`
 
-###
+### Delete a Kubernetes pod:
 
 ```bash
 kubectl delete pod hello-world-rest-api-58ff5dd898-6219d
